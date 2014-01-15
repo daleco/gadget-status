@@ -1,0 +1,3 @@
+
+// This class is run shell commands in Java and analyze the result. It's checking if the usb port is used as an ethernet gadget
+// and if there are any machine connected on the sub network 172.20.10.*

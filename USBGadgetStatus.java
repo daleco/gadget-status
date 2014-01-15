@@ -2,8 +2,9 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-// This class is run shell commands in Java and analyze the result. It's checking if the usb port is used as an ethernet gadget
+// This class run shell commands in Java and analyze the result. It's checking if the usb port is used as an ethernet gadget
 // and if there are any machine connected on the sub network 172.20.10.*
+// The main loop run a 1hz. It's a bit slower if nothing is on the subnetwork, because it's waiting for the ping result.
 public class USBGadgetStatus extends Thread {
 
 	private boolean hostMode=false;
